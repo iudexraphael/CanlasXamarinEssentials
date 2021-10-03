@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="CanlasXamarinEssentials.GeocodingPage"
+              Title="JRC Xamarin Essentials">
+    <ContentPage.Content>
+        
+        <StackLayout Padding="12,0,12,12" Spacing="5">
+            
+            <ActivityIndicator IsRunning="{Binding IsBusy}" IsVisible="{Binding IsBusy}"/>
+            
+            <Label Text="Geocoding:" />
+            <Label Text="Latitude:"/>
+            
+            <Entry Keyboard="Numeric" Text="{Binding Latitude}"/>
+            <Label Text="Longitutde"/>
+            <Entry Keyboard="Numeric" Text="{Binding Longitude}"/>
+
+            <Button Command="{Binding GetAddressCommand}"
+                    IsEnabled="{Binding IsNotBusy}"
+                    Text="Detect Address"/>
+            <Label Text="{Binding GeocodeAddress}"/>
+
+            <Label Text="Reverse Geocoding:"/>
+            <Label Text="Address:"/>
+            <Entry Text="{Binding Address}"/>
+
+            <Button Command="{Binding GetPositionCommand}"
+                    IsEnabled="{Binding IsNotBusy}"
+                    Text="Detect Location"/>
+
+            <Label Text="{Binding GeocodePosition}"/>
+        </StackLayout>
+       
+    </ContentPage.Content>
+</ContentPage>

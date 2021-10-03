@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="CanlasXamarinEssentials.MagnetometerPage"  
+             Title="JRC Xamarin Essentials">
+    <ContentPage.Content>
+        <StackLayout>
+            <Label Text="Rotate the device for results!"
+                VerticalOptions="CenterAndExpand" 
+                HorizontalOptions="CenterAndExpand" FontSize="Large" />
+            <Label x:Name="lblMeasure"
+                   VerticalOptions="CenterAndExpand"
+                   HorizontalOptions="CenterAndExpand" FontAttributes="Bold"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

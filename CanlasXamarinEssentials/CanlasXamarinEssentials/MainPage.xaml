@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="CanlasXamarinEssentials.MainPage">
+
+    <StackLayout>
+        <Frame BackgroundColor="#2196F3" Padding="24" CornerRadius="0">
+            <Label Text="Joseph Raphael M. Canlas 8 Xamarin Essentials APIs" HorizontalTextAlignment="Center" TextColor="White" FontSize="36"/>
+        </Frame>
+        <Button Text="Accelerometer" Clicked="AccelerometerPage_Clicked"/>
+        <Button Text="Barometer"    Clicked="BarometerPage_Clicked"/>
+        <Button Text="Magnetometer" Clicked="MagnetometerPage_Clicked"/>
+        <Button Text="Connectivity" Clicked="ConnectivityPage_Clicked"/>
+        
+        <Button Text="Device Info"    Clicked="DeviceInfoPage_Clicked"/>
+        <Button Text="Device Battery" Clicked="DeviceBattery_Clicked"/>
+        <Button Text="Geocoding"      Clicked="GeocodingPage_Clicked"/>
+        <Button Text="Geolocation" Clicked="GeolocationPage_Clicked"/>
+    </StackLayout>
+
+</ContentPage>
